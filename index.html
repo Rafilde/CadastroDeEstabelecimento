@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Localizações</h1>
+            <p>Preencha os compas abaixo com as informações desejadas.</p>
+        </div>
+        <form method="post" name="add-form" action="https://script.google.com/macros/s/AKfycbzRfzhXyNP8Mwd_CUEr-Nwp5hqrnoDabzhPTgeZjD8hK2JYiuo1cqycZEJT3sElz3w/exec">
+            <div class="information">
+            <div class="data">
+                <label for="filter">Filtros</label>
+                <select id="country" name="filter">
+                    <option value="Meseu">Meseu</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Bares">Bares</option>
+                    <option value="Restaurantes">Restaurantes</option>
+                    <option value="Café">Café</option>
+                    <option value="Parques">Parques</option>
+                    <option value="Bibliotecas">Bicliotecas</option>
+                    <option value="Vida noturna">Vida noturna</option>
+                    <option value="Atrações">Atrações</option>
+                    <option value="Hotéis">Hotéis</option>
+                  </select>
+            </div>
+            <div class="data">
+                <label for="locale">Local</label>
+                <input type="text" id="fname" class="campo" name="locale" placeholder="Nome do local...">
+            </div>
+            <div class="data">
+                <label for="address">Endereço</label>
+                <input type="text" id="fname" class="campo" name="address" placeholder="Endereço do local...">
+            </div>
+            <div class="data">
+                <label for="description">Descrição</label>
+                <textarea id="fname" class="campo" name="description" placeholder="Descrição do local.." style="height:200px"></textarea>
+            </div>
+            <div class="data">
+                <label for="link">Link</label>
+                <input type="text" id="fname" class="campo" name="link" placeholder="Link do site do local...">
+            </div>
+            <div class="data">
+                <label for="image">imagem</label>
+                <input type="text" id="fname" class="campo" name="image" placeholder="Link da imagem do local...">
+            </div>
+        </div>
+        <div class="footer">
+            <button type="submit" value="Submit" id="button">Salvar</button>
+        </div>
+        </form>
+        <div class="footer">
+            <button type="submit" value="Submit" id="clear">Limpar dados</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
